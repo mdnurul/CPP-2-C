@@ -15,7 +15,7 @@ If it is already installed it will tell the version
 ```
 gcc (Ubuntu 5.4.0-6ubuntu1~16.04.10) 5.4.0 20160609
 ```
-In case og not installed please install using below command for ubuntu user
+In case gcc not installed please install using below command for ubuntu user other use just google it.
 ```
 sudo apt install gcc
 ```
@@ -28,10 +28,16 @@ For cloning the repo use below command if you are git else you can downdload the
 $ git clone https://github.com/mdnurul/CPP-2-C.git
 ```
 For making the project change you corrent directry path the CPP-2-C directory and just use make in command line
+For realease
 ```
 $ make
 ```
+For debug
+```
+$ make debug
+```
 The build release will be placed in bin/release/ directory as templete
+The build release will be placed in bin/debug/ directory as templete
 
 ## Running the tests
 For testing the use the command below
