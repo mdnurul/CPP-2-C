@@ -5,11 +5,11 @@ This repository for the developers who want to convert or want to impliment simp
 This project is a simple make file based project and we have tried to make it compable for all the operating systems. Our main target to help developers to inpmiment C++ feature in C so we can use it in low-end controllers or processors.
 
 ## Current Implemented Examples
-- [C++ Templete Equivalent](#Templete)
+- [C++ Template Equivalent](#Template)
  
 
-## Templete
-C++ templete example code
+## Template
+C++ template example code
 ```
 template <typename T>
 T checkMax (T a, T b) {
@@ -74,14 +74,14 @@ For debug
 ```
 $ make debug
 ```
-The build release will be placed in bin/release/ directory as templete
-The build release will be placed in bin/debug/ directory as templete
+The build release will be placed in bin/release/ directory as template
+The build release will be placed in bin/debug/ directory as template
 
 ## Running the tests
 For the testing use the command below in release directory
 
 ```
-./templete
+./template
 ```
 
 
