@@ -9,7 +9,7 @@ This project is a simple make file based project and we have tried to make it co
  
 
 ## Templete
-C++ example code
+C++ templete example code
 ```
 template <typename T>
 T checkMax (T a, T b) {
@@ -21,7 +21,7 @@ checkMax<int>(3, 7); // it will return 7
 checkMax<double>(3.0, 7.0); // it will return 7
 checkMax<char>('g', 'e'); // it will return g
 ```
-C Equivalent Example
+C equivalent example code
 ```
 #define checkMax(a,b) ((a) > (b) ? (a) : (b))
 //use case exaple
