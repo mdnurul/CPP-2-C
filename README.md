@@ -34,7 +34,7 @@ printf("Check Max for float: %f\n",checkMax(l,m));
 printf("Check Max for long: %ld\n",checkMax(o,p));
 ```
 
-gcc recommended if you know the data types implement specific way and it can be used for muti-stement 
+gcc recommended if you know the data types implement specific way and it can be used for muti-statement 
 ```
 #define checkMaxINT(a,b)  ({int _a = (a), _b = (b); _a > _b ? _a : _b; })
 //use case example
