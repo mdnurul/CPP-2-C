@@ -78,7 +78,7 @@ The build release will be placed in bin/release/ directory as templete
 The build release will be placed in bin/debug/ directory as templete
 
 ## Running the tests
-For testing the use the command below
+For the testing use the command below in release directory
 
 ```
 ./templete
