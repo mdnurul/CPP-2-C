@@ -4,6 +4,44 @@ This repository for all the developer who want to convert or want to impliment s
 ## Getting Started
 This project is a simple make file based project and we have tried to make it compable for all the operating systems. Our main target to help developers to inpmiment C++ feature in C so we can use it in low-end controllers or processors.
 
+## Current Implemented Examples
+- [C++ Templete Equivalent](#Templete)
+ 
+
+## Templete
+C++ example code
+```
+template <typename T>
+T checkMax (T a, T b) {
+  return (a>b?a:b);
+}
+
+// Use Cases
+checkMax<int>(3, 7); // it will return 7
+checkMax<double>(3.0, 7.0); // it will return 7
+checkMax<char>('g', 'e'); // it will return g
+```
+C Equivalent Example
+```
+#define checkMax(a,b) ((a) > (b) ? (a) : (b))
+//use case exaple
+int i=3, j=7;
+float l=3.5, m=7.6;
+long o=300000, p=700000;
+
+printf("Check Max for int: %d\n",checkMax(i,j));
+printf("Check Max for float: %f\n",checkMax(l,m));
+printf("Check Max for long: %ld\n",checkMax(o,p));
+```
+
+gcc recommended if you know the data types gcc specific
+```
+#define checkMaxINT(a,b)  ({int _a = (a), _b = (b); _a > _b ? _a : _b; })
+//use case example
+printf("Check with MaxINT: %d\n",checkMaxINT(i,j)); // it will return 7
+```
+
+
 ### Prerequisites
 
 This project uses gcc compiler. Please check the gcc installed or not using below command.
