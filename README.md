@@ -5,8 +5,8 @@ This repository for the developers who want to convert or want to impliment simp
 This project is a simple make file based project and we have tried to make it compable for all the operating systems. Our main target to help developers to inpmiment C++ feature in C so we can use it in low-end controllers or processors.
 
 ## Implemented Template Examples
-- [C++ Template Equivalent macro](#Example1)
-- [C++ Template Equivalent macro](#Example2)
+- [C++ Template 1](#Example1)
+- [C++ Template 2](#Example2)
  
 
 ## Example1
