@@ -4,11 +4,12 @@ This repository for the developers who want to convert or want to impliment simp
 ## Getting Started
 This project is a simple make file based project and we have tried to make it compable for all the operating systems. Our main target to help developers to inpmiment C++ feature in C so we can use it in low-end controllers or processors.
 
-## Implemented Examples
-- [C++ Template Equivalent](#Template)
+## Implemented Template Examples
+- [C++ Template Equivalent macro](#Example1)
+- [C++ Template Equivalent macro](#Example2)
  
 
-## Template
+## Example1
 C++ template example code
 ```
 template <typename T>
@@ -40,6 +41,31 @@ gcc recommended if you know the data types implement specific way and it can be 
 //use case example
 printf("Check with MaxINT: %d\n",checkMaxINT(i,j)); // it will return 7
 ```
+
+
+## Example2
+First, we need to declare a couple of macros. Those macros need to be included in every file that makes use of templates. To make things easier we will declare them in a .h file called "checkMaxGeneric.h": 
+
+```
+#include "checkMaxGeneric.h"
+
+// Outside main
+DECLARE_CHECK_MAX(int)
+IMPLEMENT_CHECK_MAX(int)
+
+//inside main 
+
+int b = 4;
+int arr[100];
+for(int i=0;i<100;i++){
+    arr[i] = i+1;
+}
+int *ptr = arr;
+
+int value = callCheckMax(int,ptr,b);
+
+```
+
 
 
 ### Prerequisites
