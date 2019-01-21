@@ -11,6 +11,8 @@ This project is a simple make file based project and we have tried to make it co
 
 ## Example1
 C++ template example code
+
+
 ```
 template <typename T>
 T checkMax (T a, T b) {
@@ -45,6 +47,46 @@ printf("Check with MaxINT: %d\n",checkMaxINT(i,j)); // it will return 7
 
 ## Example2
 First, we need to declare a couple of macros. Those macros need to be included in every file that makes use of templates. To make things easier we will declare them in a .h file called "checkMaxGeneric.h": 
+
+Header file
+
+```
+#ifndef CHECK_MAX_GENERIC_H_
+#define CHECK_MAX_GENERIC_H_
+
+#define DECLARE_CHECK_MAX(type) \
+    type checkMax##type(type* a, type b );
+
+#define IMPLEMENT_CHECK_MAX(T) \
+    T checkMax##T(T* a, T b) \
+    {\
+        T sum = 0; \
+        int i; \
+        if (b != 0) \
+        { \
+            for (i = 0; i < 100; i++) \
+            { \
+                sum += (*a++) * b; \
+                b++; \
+            } \
+        }else \
+        { \
+            for (i = 0; i < 100; i++) \
+            { \
+                sum += (*a++) * b; \
+                b--; \
+            } \
+        } \
+        return sum; \
+    }
+
+#define callCheckMax(type,a,b)  checkMax##type(a,b)
+
+#endif
+```
+
+
+Main Program test..
 
 ```
 #include "checkMaxGeneric.h"
